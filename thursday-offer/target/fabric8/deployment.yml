@@ -1,0 +1,18 @@
+metadata:
+  annotations:
+    configmap.fabric8.io/update-on-change: thursday-offer
+spec:
+  replicas: 1
+  template:
+    spec:
+      volumes:
+        - name: config
+          configMap:
+            name: thursday-offer
+            items:
+            - key: application.properties
+              path: application.properties
+      containers:
+        - volumeMounts:
+            - name: config
+              mountPath: /deployments/config

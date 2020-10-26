@@ -1,0 +1,11 @@
+flipkart2\MyBusinessObjectInsertCommand.class
+flipkart2\rar\Adapter.class
+flipkart2\rar\ManagedConnectionFactory.class
+flipkart2\rar\ManagedConnectionMetaData.class
+flipkart2\MyBusinessObjectUpdateCommand.class
+flipkart2\MyBusinessObject.class
+flipkart2\MyBusinessObjectDeleteCommand.class
+flipkart2\MyBusinessObjectProvider.class
+flipkart2\rar\ConnectionManager.class
+flipkart2\rar\ManagedConnection.class
+flipkart2\rar\InitializationJob.class

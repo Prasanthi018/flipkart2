@@ -1,0 +1,26 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    fabric8.io/git-commit: a8c5f80d33ddcf36cb9dbfcd9f63db922db902c1
+    fabric8.io/git-branch: master
+    prometheus.io/scrape: "true"
+    prometheus.io/port: "9779"
+  labels:
+    expose: "true"
+    provider: fabric8
+    project: menfashion
+    version: 1.0-SNAPSHOT
+    group: flipkart2
+  name: menfashion
+spec:
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    project: menfashion
+    provider: fabric8
+    group: flipkart2
